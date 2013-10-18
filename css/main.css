@@ -1,0 +1,204 @@
+html, body {
+	height: 100%;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+}
+
+.fontSize18 {
+	font-size: 18px;
+}
+/*** HEADER ***/
+
+header {
+	height: 70px;
+	background: #F05A28;	 
+}
+
+header .navbar-toggle {
+	border-color: #FFFFFF;
+	margin-top: 18px;
+	margin-bottom: 18px;
+}
+
+header .navbar-toggle .icon-bar {
+	background-color: #FFFFFF;
+}
+
+header .navbar-brand {
+	line-height: 48px;
+	padding: 9px 0 10px 15px;
+}
+
+header .navbar-nav > li {
+	margin-left: 44px;
+	background: url(../images/menu-bubble.png) center left no-repeat;
+	padding: 15px 0 15px 38px;
+	text-transform: uppercase;
+}
+
+header .navbar-nav > li > a {
+	font-size: 28px;
+	font-weight: 700;
+	color: #FFFFFF;
+	line-height: 38px;
+	border-bottom: 2px solid #FFFFFF;
+	padding: 0;
+}
+
+header .navbar-nav > li > a:hover {
+	background: none;
+}
+
+section {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	background: #D0D0D0;
+}
+
+section > .container {
+	padding: 70px 15px 0 15px;
+}
+
+section#home .info {
+	font-weight: 300;
+	font-size: 20px;
+	margin-top: 70px;
+	background: #A7A9AB;
+	padding: 20px;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	color: #FFFFFF;
+}
+
+section#home .info span {
+	font-weight: 700;
+}
+ 
+section#home .full-logo {
+	margin-top: 25px;
+}
+
+section#home .map {
+	margin-top: 40px;
+}
+
+section#services, section#work {
+	background: #F05A28;
+}
+
+section#services img {
+	margin: 40px auto 0px;
+}
+
+section#work img {
+	margin: 0 auto;
+	margin-top: 100px;
+}
+
+section#team  .members {
+	width: 875px;
+	margin: 22px auto 0 auto;
+}
+
+section#team  .members .memberColumn {
+	float: left;
+}
+
+section#team  .members .memberColumn.mc1 {
+	width: 250px;
+}
+
+section#team .members .memberColumn.mc2 {
+	width: 375px;
+}
+
+section#team  .members .memberColumn.mc3 {
+	width: 250px;
+}
+
+section#team  .members .teamBlock {
+	width: 115px;
+	height: 115px;
+	float: left;
+	outline: 1px solid #000000;
+	margin: 5px;
+	background: #FFFFFF;
+	text-align: center;
+	font-size: 25px;
+}
+
+section#team  .members .teamBlock.doubleHeight {
+	height: 240px;
+}
+
+section#team  .members .teamBlock.doubleWidth {
+	width: 240px;
+}
+
+section#team  .members .teamBlock.darkBack{
+	background: #58585B;
+	color: #FFFFFF;
+}
+
+section#team .members .teamBlock.logo {
+	width: 240px;
+	height: 240px;
+	padding: 10px;
+	background: none;
+	outline: none;
+}
+
+section#team .members .teamBlock p {
+	margin-top: 38px;
+	line-height: 20px;
+}
+
+section#team .members .teamBlock p.rotated {
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+
+	/* also accepts left, right, top, bottom coordinates; not required, but a good idea for styling */
+	-webkit-transform-origin: 50% 50%;
+	-moz-transform-origin: 50% 50%;
+	-ms-transform-origin: 50% 50%;
+	-o-transform-origin: 50% 50%;
+	transform-origin: 50% 50%;
+
+	/* Should be unset in IE9+ I think. */
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+	margin-top: 124px;
+	font-size: 40px;
+	line-height: 42px;
+}
+
+
+section#contact img {
+	margin: 40px auto 0px;
+}
+
+
+/* FOOTER */
+footer {
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background-color: #424242;
+}
+
+footer ul li {
+	float: left;
+	line-height: 35px;
+	padding: 7px 0 7px 0;
+	margin-left: 25px;
+}
+
+footer ul {
+	list-style: none;
+	float: right;
+}

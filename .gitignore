@@ -1,13 +1,11 @@
-# Bootstrap
-app/bootstrap*
+# eclipse
+.project
+.metadata
+.buildpath
+.settings/*
 
-# Symfony directories
+# os
+.DS_Store
+
+# misc
 vendor/*
-*/logs/*
-*/cache/*
-web/uploads/*
-web/bundles/*
-
-# Configuration files
-app/config/parameters.ini
-app/config/parameters.yml
