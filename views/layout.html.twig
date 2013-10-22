@@ -32,8 +32,9 @@
 				</div>
 				<div class="navbar-collapse collapse pull-right">
 					<ul class="nav navbar-nav">
-						<li class="active"><a href="{{ app.url_generator.generate('services') }}">Services</a></li>
-						<li><a href="{{ app.url_generator.generate('team') }}">Team</a></li>
+						<li{% block menu_services_class %}{% endblock %}><a href="{{ app.url_generator.generate('services') }}">Services</a></li>
+						<li{% block menu_team_class %}{% endblock %}><a href="{{ app.url_generator.generate('team') }}">Team</a></li>
+						<li{% block menu_contact_class %}{% endblock %}><a href="{{ app.url_generator.generate('contact') }}">Contact us</a></li>
 					</ul>
 				</div><!--/.navbar-collapse -->
 			</div>
