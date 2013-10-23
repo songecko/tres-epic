@@ -41,12 +41,27 @@ header .navbar-nav > li > a {
 	font-weight: 700;
 	color: #FFFFFF;
 	line-height: 38px;
-	border-bottom: 2px solid #FFFFFF;
 	padding: 0;
+}
+
+header .navbar-nav > li.active > a {
+	border-bottom: 2px solid #FFFFFF;
 }
 
 header .navbar-nav > li > a:hover {
 	background: none;
+}
+
+.carousel-control.left, .carousel-control.right  {
+	background-image: none;
+}
+
+.carousel-control.left  {
+	left: -15%;
+}
+
+.carousel-control.right  {
+	right: -15%;
 }
 
 section {
@@ -84,12 +99,21 @@ section#home .map {
 	margin-top: 40px;
 }
 
-section#services, section#work {
+section#services, section#work, section#team {
 	background: #F05A28;
 }
 
-section#services img {
+section#services img, section#team img.img-responsive {
 	margin: 40px auto 0px;
+}
+
+section#services .carousel, section#team .carousel {
+	width: 80%;
+	margin: 0 auto;
+}
+
+section#team .carousel .carousel-inner {
+	height: 665px;
 }
 
 section#work img {
@@ -97,9 +121,9 @@ section#work img {
 	margin-top: 100px;
 }
 
-section#team  .members {
+section#team .members {
 	width: 875px;
-	margin: 22px auto 0 auto;
+	margin: 40px auto 0 auto;
 }
 
 section#team  .members .memberColumn {
@@ -188,7 +212,7 @@ footer {
   width: 100%;
   position: fixed;
   bottom: 0;
-  background-color: #424242;
+  /*background-color: #424242;*/
 }
 
 footer ul li {
