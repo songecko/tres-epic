@@ -112,6 +112,14 @@ section#services .carousel, section#team .carousel {
 	margin: 0 auto;
 }
 
+section#services #flipbook{
+    width: 800px;
+    height: 400px;
+}
+section#services #flipbook .turn-page{
+    background-color:#ccc;
+}
+
 section#team .carousel .carousel-inner {
 	height: 665px;
 }
