@@ -28,13 +28,13 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="{{ app.url_generator.generate('homepage') }}"><img src="images/logo.png" alt="Tres Epic"/></a>
+					<a class="navbar-brand" href="{{ path('homepage') }}"><img src="images/logo.png" alt="Tres Epic"/></a>
 				</div>
 				<div class="navbar-collapse collapse pull-right">
 					<ul class="nav navbar-nav">
-						<li{% block menu_services_class %}{% endblock %}><a href="{{ app.url_generator.generate('services') }}">Services</a></li>
-						<li{% block menu_team_class %}{% endblock %}><a href="{{ app.url_generator.generate('team') }}">Team</a></li>
-						<li{% block menu_contact_class %}{% endblock %}><a href="{{ app.url_generator.generate('contact') }}">Contact us</a></li>
+						<li{{ (app.request.attributes.get('_route') == "services")?' class="active"':'' }}><a href="{{ path('services') }}">Services</a></li>
+						<li{{ (app.request.attributes.get('_route') == "team")?' class="active"':'' }}><a href="{{ path('team') }}">Team</a></li>
+						<li{{ (app.request.attributes.get('_route') == "contact")?' class="active"':'' }}><a href="{{ path('contact') }}">Contact us</a></li>
 					</ul>
 				</div><!--/.navbar-collapse -->
 			</div>
@@ -49,7 +49,7 @@
 					<li><a href="#" title="Facebook"><img src="images/fb.png" alt="Facebook" /></a></li>
 					<li><a href="#" title="Linked In"><img src="images/linked_in.png" alt="Linked In" /></a></li>
 					<li><a href="#" title="Email"><img src="images/email.png" alt="Email" /></a></li> -->
-					<li><a href="{{ app.url_generator.generate('contact') }}"><img src="images/phone.png" /></a></li>
+					<li><a href="{{ path('contact') }}"><img src="images/phone.png" /></a></li>
 				</ul>
 			</div>
 		</footer>
