@@ -1,9 +1,20 @@
 $(document).ready(function()
 {	
-	/*$("#flipbook").turn({
-		width: 400,
-		height: 300,
-		autoCenter: true
-	});*/
-	$('#flipbook').turn();	
+	$("section#services #flipbook").each(function()
+	{
+		$(this).turn({
+			width: 1020,
+			height: 382,
+			autoCenter: false
+		});
+	}); 
+	
+	
+	$("section#contact .city").hover(function()
+	{
+		$(this).children('p').show();
+	}, function()
+	{
+		$(this).children('p').hide();
+	});
 });	
