@@ -112,13 +112,11 @@ section#services .carousel, section#team .carousel {
 	margin: 0 auto;
 }
 
-section#services #flipbook{
-    width: 800px;
-    height: 400px;
+section #flipbook{    
+	margin: 50px auto 0 auto;
 }
-section#services #flipbook .turn-page{
-    background-color:#ccc;
-}
+
+
 
 section#team .carousel .carousel-inner {
 	height: 665px;
@@ -223,7 +221,19 @@ section#contact .city p {
 	color: #F05A28;
 }
 
+section#contact .cityContent{
+	width: 880px;
+	margin: 25px auto;
+}
 
+section#contact .opaco {
+	 display: none;
+	 background: rgba(0, 0, 0, 0.5);	 
+	 width: 100%;
+	 height: 100%;
+	 position: absolute;
+	 top: 0;
+}
 
 /* FOOTER */
 footer {
