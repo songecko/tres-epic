@@ -103,6 +103,11 @@ section#services, section#work, section#team {
 	background: #F05A28;
 }
 
+section#team img {
+	margin-left: 90px;
+}
+	
+
 section#team img.img-responsive {
 	margin: 40px auto 0px;
 }
@@ -111,7 +116,14 @@ section#services .carousel, section#team .carousel {
 	width: 80%;
 	margin: 0 auto;
 }
-
+section#services  .previous{
+	position: relative;
+	float: left;
+}
+section#services  .next{
+	position: relative;
+	float: right;
+}
 section #flipbook{    
 	margin: 50px auto 0 auto;
 }
@@ -218,8 +230,9 @@ section#contact .city p {
 	position: absolute;
 	top: 100px;
 	left: 23px;
-	color: #F05A28;
-	font-size: 23px;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 22px;
 }
 
 section#contact .cityContent{
@@ -242,7 +255,7 @@ footer {
   width: 100%;
   position: fixed;
   bottom: 0;
-  /*background-color: #424242;*/
+  background-color: #424242;
 }
 
 footer ul li {

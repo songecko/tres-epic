@@ -9,6 +9,16 @@ $(document).ready(function()
 		});
 	}); 
 	
+	$("section#services .previous").click(function()
+	{
+		$("section#services #flipbook").turn("previous"); 
+	}); 
+	
+	$("section#services .next").click(function()
+	{
+		$("section#services #flipbook").turn("next"); 
+	}); 
+	
 	$("section#team #flipbook").each(function()
 	{
 		$(this).turn({
