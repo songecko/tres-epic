@@ -1,34 +1,31 @@
 $(document).ready(function()
 {	
+	//Services
+	var fbWidth = $("section#services > .container").width();
 	$("section#services #flipbook").each(function()
 	{
 		$(this).turn({
-			width: 1020,
-			height: 382,
+			width: fbWidth,
+			height: ((fbWidth/2) * 763) / 1020,
 			autoCenter: false
 		});
 	}); 
 	
-	$("section#services .previous").click(function()
+	$("section#services .previous").click(function(e)
 	{
 		$("section#services #flipbook").turn("previous"); 
+		
+		e.preventDefault();
 	}); 
 	
-	$("section#services .next").click(function()
+	$("section#services .next").click(function(e)
 	{
 		$("section#services #flipbook").turn("next"); 
+		
+		e.preventDefault();
 	}); 
 	
-	$("section#team #flipbook").each(function()
-	{
-		$(this).turn({
-			width: 1020,
-			height: 382,
-			autoCenter: false
-		});
-	}); 
-	
-	
+	//Contact
 	$("section#contact .city").hover(function()
 	{
 		$(this).children('p').show();

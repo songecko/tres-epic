@@ -68,11 +68,19 @@ section {
 	min-height: 100%;
 	height: auto !important;
 	height: 100%;
-	background: #D0D0D0;
+	background: #e8e8ea; /* background gris */
 }
 
 section > .container {
 	padding: 70px 15px 0 15px;
+}
+
+section #flipbook {    
+	margin: 50px auto 0 auto;
+}
+
+section #flipbook .page img {
+	width: 100%;
 }
 
 section#home .info {
@@ -99,18 +107,17 @@ section#home .map {
 	margin-top: 40px;
 }
 
-section#services, section#work, section#team {
-	background: #F05A28;
+section#services, section#work {
+	background: #F05A28; /** background naranja **/
 }
 
-section#team img {
-	margin-left: 90px;
-}
-	
 
-section#team img.img-responsive {
-	margin: 40px auto 0px;
+/*** SERVICES ***/
+section#services > .container {
+	padding-left: 0;
+	padding-right: 0;
 }
+
 
 section#services .carousel, section#team .carousel {
 	width: 80%;
@@ -124,11 +131,6 @@ section#services  .next{
 	position: relative;
 	float: right;
 }
-section #flipbook{    
-	margin: 50px auto 0 auto;
-}
-
-
 
 section#team .carousel .carousel-inner {
 	height: 665px;
@@ -142,6 +144,16 @@ section#work img {
 section#team .members {
 	width: 875px;
 	margin: 40px auto 0 auto;
+}
+
+section#team {
+	overflow: hidden;	
+}
+
+section#team img.img-responsive {
+	margin: 15px auto 0px;
+	max-height: 100%;
+	padding-bottom: 135px;
 }
 
 section#team  .members .memberColumn {
