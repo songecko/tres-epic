@@ -123,11 +123,14 @@ section#services .carousel, section#team .carousel {
 	width: 80%;
 	margin: 0 auto;
 }
-section#services  .previous{
+section#services .previous img, section#services .next img {
+	height: 100px;
+}
+section#services .previous{
 	position: relative;
 	float: left;
 }
-section#services  .next{
+section#services .next{
 	position: relative;
 	float: right;
 }
@@ -274,7 +277,7 @@ footer ul li {
 	float: left;
 	line-height: 35px;
 	padding: 7px 0 7px 0;
-	margin-left: 25px;
+	margin-left: 35px;
 }
 
 footer ul {
