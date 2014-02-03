@@ -2,6 +2,10 @@
     "require": {
         "silex/silex": "1.*",
         "twig/twig": ">=1.14,<2.0",
-        "symfony/twig-bridge": "~2.3"
+        "symfony/twig-bridge": "~2.3",
+        "jbinfo/mobile-detect-service-provider": "~1"
+    },
+    "autoload": {
+        "psr-4": {"": "src/"}
     }
 }
