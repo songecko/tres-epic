@@ -16,10 +16,13 @@
         <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
         <link rel="stylesheet" href="{{ asset('css/bootstrap-theme.min.css') }}">
         <link rel="stylesheet" href="{{ asset('css/main.css') }}">
-
+		{% if(app.isMobile) %}
+		<link rel="stylesheet" href="{{ asset('css/mobile.css') }}">
+		{% endif %}
+		
         <script src="{{ asset('js/vendor/modernizr-2.6.2-respond-1.1.0.min.js') }}"></script>
     </head>
-    <body>
+    <body{{ app.isMobile?' id="mobile"':'' }}>
 		<header class="navbar-fixed-top">
 			<div class="container">
 				<div class="navbar-header">
@@ -34,7 +37,17 @@
 					<ul class="nav navbar-nav">
 						<li{{ (app.request.attributes.get('_route') == "services")?' class="active"':'' }}><a href="{{ path('services') }}">Services</a></li>
 						<li{{ (app.request.attributes.get('_route') == "team")?' class="active"':'' }}><a href="{{ path('team') }}">Team</a></li>
-						<li{{ (app.request.attributes.get('_route') == "contact")?' class="active"':'' }}><a href="{{ path('contact') }}">Contact us</a></li>
+						<li class="contact{{ (app.request.attributes.get('_route') == "contact")?' active':'' }}"><a href="{{ path('contact') }}">Contact us</a></li>
+					</ul>
+					<ul class="contactMobile clearfix">
+						<li><a href="mailto:weare@tresepic.com"><img src="{{ asset('images/email.png') }}"></a></li>
+						<li><a href="{{ path('contact') }}"><img src="{{ asset('images/phone2.png') }}"></a></li>
+					</ul>
+					<ul class="socialMobile clearfix">
+						<li><a href="https://www.facebook.com/tresepic" title="Facebook" target="_blank"><img src="{{ asset('images/fb.png') }}" alt="Facebook"></a></li>
+						<li><a href="http://www.linkedin.com/company/tr-s-epic" title="LinkedIn" target="_blank"><img src="{{ asset('images/linked_in.png') }}" alt="LinkedIn"></a></li>
+						<li><a href="https://twitter.com/TresEpic" title="Twitter" target="_blank"><img src="{{ asset('images/tw.png') }}" alt="Twitter"></a></li>
+						<li><a href="http://wearetresepic.tumblr.com/" title="Tumblr" target="_blank"><img src="{{ asset('images/tumblr.png') }}" alt="Tumblr"></a></li>
 					</ul>
 				</div><!--/.navbar-collapse -->
 			</div>
@@ -48,6 +61,7 @@
 					<li><a href="http://wearetresepic.tumblr.com/" title="Tumblr" target="_blank"><img src="{{ asset('images/tumblr.png') }}" alt="Tumblr" /></a></li>
 					<li><a href="https://twitter.com/TresEpic" title="Twitter" target="_blank"><img src="{{ asset('images/tw.png') }}" alt="Twitter" /></a></li>
 					<li><a href="https://www.facebook.com/tresepic" title="Facebook" target="_blank"><img src="{{ asset('images/fb.png') }}" alt="Facebook" /></a></li>
+					<li><a href="http://www.linkedin.com/company/tr-s-epic" title="LinkedIn" target="_blank"><img src="{{ asset('images/linked_in.png') }}" alt="LinkedIn"></a></li>
 					<li><a href="{{ path('contact') }}"><img src="{{ asset('images/phone.png') }}" /></a></li>
 				</ul>
 			</div>
@@ -57,6 +71,8 @@
         <script>window.jQuery || document.write('<script src="{{ asset('js/vendor/jquery-1.10.1.min.js') }}"><\/script>')</script>
         <script src="{{ asset('js/vendor/bootstrap.min.js') }}"></script>
 		<script type="text/javascript" src="{{ asset('js/vendor/turn.min.js') }}"></script>
+		<script type="text/javascript" src="{{ asset('js/vendor/jquery.cycle2.min.js') }}"></script>
+		<script type="text/javascript" src="{{ asset('js/vendor/jquery.cycle2.swipe.min.js') }}"></script>		
         <script src="{{ asset('js/main.js') }}"></script>
     </body>
 </html>

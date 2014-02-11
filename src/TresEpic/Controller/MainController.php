@@ -38,7 +38,9 @@ class MainController
 		$viewExtension = '.html.twig';
 		$viewName = substr($view, 0, strrpos($view, $viewExtension));
 		
-		if($this->app["mobile_detect"]->isMobile())
+		$this->app["isMobile"] = !$this->app["mobile_detect"]->isMobile(); 
+		
+		if($this->app["isMobile"])
 		{
 			$viewExtension = '.m'.$viewExtension;
 		}

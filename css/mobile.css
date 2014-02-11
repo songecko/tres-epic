@@ -1,0 +1,88 @@
+body#mobile {
+	padding-top: 70px;
+}
+
+body#mobile .navbar-collapse {
+	width: 210px;
+	background: #F05A28;
+	padding: 0;
+}
+
+body#mobile .navbar-collapse ul.navbar-nav {
+	margin: 0;
+}
+
+body#mobile .navbar-collapse ul.navbar-nav li {
+	padding: 0;
+	background: none;
+	margin: 0;
+	border-bottom: 1px solid #FFFFFF;
+}
+
+ 
+body#mobile .navbar-collapse ul.navbar-nav li.contact {
+	display:none;
+}
+
+body#mobile .navbar-collapse ul.navbar-nav li a {	
+	font-size: 26px;
+	text-align: center;
+}
+
+body#mobile .navbar-collapse ul.navbar-nav li a:hover, 
+body#mobile .navbar-collapse ul.navbar-nav li.active a,
+body#mobile .navbar-collapse ul.navbar-nav li:hover a {
+	border: none;
+}
+
+body#mobile .navbar-collapse ul.contactMobile, 
+body#mobile .navbar-collapse ul.socialMobile {
+	display: block;
+	list-style: none;
+	padding: 10px;
+	margin: 0;
+}
+
+body#mobile .navbar-collapse ul.contactMobile {
+	border-bottom: 1px solid #FFFFFF;	
+}
+
+body#mobile .navbar-collapse ul.socialMobile {
+	padding-bottom: 0;
+}
+
+body#mobile .navbar-collapse ul.contactMobile li, 
+body#mobile .navbar-collapse ul.socialMobile li {
+	width: 50%;
+	float: left;
+}
+
+body#mobile .navbar-collapse ul.socialMobile li {
+	padding: 10px 0;
+}
+
+body#mobile .navbar-collapse ul.contactMobile li img, 
+body#mobile .navbar-collapse ul.socialMobile li img {
+	display: block;
+	margin: 0 auto;
+}
+	
+body#mobile footer {
+	display:none;
+}
+
+body#mobile section#services {
+	background: url(../images/circuits.jpg) no-repeat;
+	background-size: cover;
+	overflow: hidden;
+}
+
+body#mobile section#team img.img-responsive {
+	padding-bottom: 0;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) and (max-device-width : 480px) {
+	
+}

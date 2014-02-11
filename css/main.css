@@ -44,7 +44,7 @@ header .navbar-nav > li > a {
 	padding: 0;
 }
 
-header .navbar-nav > li.active > a, header .navbar-nav > li:hover > a {
+header .navbar-nav  li.active > a, header .navbar-nav  li:hover > a {
 	border-bottom: 2px solid #FFFFFF;
 }
 
@@ -54,6 +54,10 @@ header .navbar-nav > li > a:hover {
 
 .carousel-control.left, .carousel-control.right  {
 	background-image: none;
+}
+
+header ul.contactMobile, header ul.socialMobile {
+	display: none;
 }
 
 .carousel-control.left  {
@@ -79,6 +83,19 @@ section > .container {
 section .container .cell {
 	display:table-cell; 
 	vertical-align:middle;
+}
+
+section img.centered {
+	/*height: 100%;*/
+	margin: 0 auto;
+}
+
+section img.fullWidth {
+	width: 100%;
+}
+
+section img.fullHeight {
+	height: 100%;
 }
 
 section #flipbook {    

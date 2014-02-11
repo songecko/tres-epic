@@ -1,0 +1,14 @@
+{% extends "layout.html.twig" %}
+
+{% block content %}
+<section id="services" class="cycle-slideshow" 
+		data-cycle-fx="scrollHorz" 
+		data-cycle-swipe="true"
+		data-cycle-timeout="4000"
+>
+	<img src="{{ asset('images/mobile/services-01.png') }}" class="fullWidth img-responsive" alt="Servicios">
+	<img src="{{ asset('images/mobile/services-02.png') }}" class="fullWidth img-responsive" alt="Servicios">
+	<img src="{{ asset('images/mobile/services-03.png') }}" class="fullWidth img-responsive" alt="Servicios">
+	<img src="{{ asset('images/mobile/services-04.png') }}" class="fullWidth img-responsive" alt="Servicios">
+</section>
+{% endblock %}
